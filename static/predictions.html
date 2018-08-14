@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="mcicon.png">
+
+    <title>MercyCorps Conditional Aid</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="starter-template.css" rel="stylesheet">
+
+    <style>
+    * {
+        box-sizing: border-box;
+    }
+
+    .column {
+        float: left;
+        width: 33.33%;
+        padding: 5px;
+    }
+
+    /* Clearfix (clear floats) */
+    .row::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    </style>
+    </head>
+
+  <body>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+        <a class="navbar-brand" href="#"><img src="mcicon.png" height="32" width="32"></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="home.html">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="students.html">Student</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">School</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="">Make Payment</a>
+          </li>
+          <li class="nav-item active dropdown">
+            <a class="nav-link dropdown-toggle" href="" id="dropdown01" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Report</a>
+            <div class="dropdown-menu" aria-labelledby="dropdown01">
+              <a class="dropdown-item" href="classAttendance.html">Attendance</a>
+              <a class="dropdown-item" href="payments.html">Payment History</a>
+              <a class="dropdown-item" href="dataAnalysis.html">Data Analysis</a>
+              <a class="dropdown-item" href="predictions.html">Predictions</a>
+            </div>
+          </li>
+        </ul>
+        <form class="form-inline my-2 my-lg-0">
+          <input class="form-control mr-sm-2" type="text" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </div>
+    </nav>
+
+    <main role="main" class="container">
+      <div class="starter-template">
+        <h1>Predictions</h1>
+        <br>
+        <div id="attendancetable" style="display:true">
+        <table class="table">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Student</th>
+              <th scope="col">Attendance during aid</th>
+              <th scope="col">Attendance after aid</th>
+            </tr>
+          </thead>
+          <tbody data-link="row" class="rowlink">
+            <tr>
+              <th scope="row">1</th>
+              <td>Anning, Mary</td>
+              <td>100%</td>
+              <td  class="text-secondary">50%</td>
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Austen, Jane</td>
+              <td>50%</td>
+              <td  class="text-secondary">10%</td>
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Beckham, Victoria</td>
+              <td>70%</td>
+              <td  class="text-secondary">30%</td>
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Curie, Marie</td>
+              <td>90%</td>
+              <td  class="text-secondary">80%</td>
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Ennis, Jessica</td>
+              <td>85%</td>
+              <td  class="text-secondary">60%</td>
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td  class="text-secondary">Kelly, Grace</td>
+              <td  class="text-secondary">80%</td>
+              <td  class="text-secondary">62%</td>
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td  class="text-secondary">Nicks, Stevie</td>
+              <td  class="text-secondary">72%</td>
+              <td  class="text-secondary">33%</td>
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Shelley, Mary</td>
+              <td>50%</td>
+              <td  class="text-secondary">15%</td>
+            </tr>
+            <tr>
+              <th scope="row">9</th>
+              <td>Watson, Emma</td>
+              <td>90%</td>
+              <td  class="text-secondary">70%</td>
+            </tr>
+            <tr>
+              <th scope="row">10</th>
+              <td  class="text-secondary">Winslet, Kate</td>
+              <td  class="text-secondary">72%</td>
+              <td  class="text-secondary">49%</td>
+            </tr>
+          </tbody>
+        </table>
+        </div>
+        <p class="lead"></p>
+      </div>
+
+    </main><!-- /.container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="assets/js/vendor/popper.min.js"></script>
+    <script src="dist/js/bootstrap.min.js"></script>
+  </body>
+</html>

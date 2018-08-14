@@ -1,0 +1,13 @@
+{# mercycorps_app/templates/mercycorps_app/student.html #}
+{% load render_table from django_tables2 %}
+<!doctype html>
+<html>
+    <head>
+        <title>List of students</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <p><h2>List of Students</h2></p>
+        {% render_table table %}
+    </body>
+</html>

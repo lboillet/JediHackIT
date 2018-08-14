@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Add a new student</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+    </head>
+    <body>
+        <p><h2>Add a new student</h2></p>
+<form action="/new_student/" method="post">
+    <label for="first_name">First name: </label>
+    <input id="first_name" type="text" name="first_name" value="{{ current_name }}">
+    <br>
+    <label for="last_name">Last name: </label>
+    <input id="last_name" type="text" name="last_name" value="{{ current_name }}">
+    <br>
+    <label for="att_percent">Attendance: </label>
+    <input id="att_percent" type="text" name="att_percent" value="{{ current_att_percent }}">
+        
+    <br>
+    <input type="submit" value="OK">
+</form>
+    </body>
+</html>
+

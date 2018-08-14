@@ -1,0 +1,21 @@
+{% extends "base_generic.html" %}
+
+{% block content %} 
+
+<main role="main" class="container">
+
+<div class="starter-template">
+    <h1>Add New Student</h1>
+ </div>
+         <br><br>
+    <form method="post" novalidate>
+          {% csrf_token %}
+          <table >
+            {{ form }}
+          </table>
+          <br><br>
+          <button type="submit">Submit</button>
+    </form>
+
+    </main><!-- /.container -->
+{% endblock %}
